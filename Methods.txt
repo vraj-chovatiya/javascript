@@ -1,0 +1,9 @@
+this  ---> this is an object which object calling this function 
+call  ---> this object su hoy ae value pass karavvani hoy 
+apply ---> aa method ma function call karti vakhte array ma value pass karavvani 
+	     Ex. functionName.apply(argument1,["value1","value2"]);
+	         argument1 --> any object name 
+		   value1    --> any string
+		   value2    --> any string
+bind  ---> It return a function 
+	     --> function ne object ma add karine call karavi sakiye
