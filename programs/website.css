@@ -86,3 +86,38 @@ a{
   color: white;
   font-weight: bold;
 }
+.section-signup{
+  margin: 5rem auto;
+  text-align: center;
+  background: lightgrey;
+  border-radius: 10px;
+  padding: 1rem;
+}
+.signup-form{
+  max-width: 800px;
+  width: 90%;
+  text-align: left;
+  margin: auto;
+}
+.signup-form label{
+  display: block;
+}
+.signup-form input{
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+}
+.form-group{
+  margin-top: 1rem;
+}
+.signup-form textarea{
+  width: 100%;
+}
+.signup-btn{
+  background: #0f0f0f;
+  color: white;
+  padding: 1rem 2rem;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+}
