@@ -106,7 +106,7 @@ for(const value of navitem){
 const headline = document.querySelector(".headline");
 console.log(headline);
 console.log(headline.innerHTML);
-headline.innerHTML = "<h1> inner HTML changed ";
+headline.innerHTML = "<h1> inner HTML changed </h1>";
 headline.innerHTML += "<button class=\"btn\"> Learn More </button> ";
 console.log(headline.innerHTML);
 
@@ -128,21 +128,42 @@ console.log(htmlelementnode.ChildNodes);
 
 //task
 
-const h1 = document.querySelector("h1");
-const div = h1.parentNode;
-div.style.backgroundColor = "white";
-div.style.color = "black";
+// const h1 = document.querySelector("h1");
+// const div = h1.parentNode;
+// div.style.backgroundColor = "white";
+// div.style.color = "black";
 
 
 
 // class list, add, remove, toggle class
 
-const classTodo = document.querySelector(".todo-section");
-console.log(classTodo.classList);
-// classTodo.classList.add("bg-dark");
-// classTodo.classList.remove("container");
-const ans = classTodo.classList.contains("container");
-console.log(ans);
+// const classTodo = document.querySelector(".todo-section");
+// console.log(classTodo.classList);
+// // classTodo.classList.add("bg-dark");
+// // classTodo.classList.remove("container");
+// const ans = classTodo.classList.contains("container");
+// console.log(ans);
 
-classTodo.classList.toggle("bg-dark");
-// toggle method use, class are available so it will remove it or class are not available so it will add class. 
+// classTodo.classList.toggle("bg-dark");
+// // toggle method use, class are available so it will remove it or class are not available so it will add class. 
+
+
+
+
+// *************************
+// document.createElement
+// append
+// prepend 
+// remove
+
+const todolist = document.querySelector(".todo-list");
+const todoitem = document.createElement("li");
+const todotext = document.createTextNode("new todo list");
+todoitem.append(todotext);
+todolist.append(todoitem);
+
+const todolist2 = document.querySelector(".todo-list");
+const todoitem2 = document.createElement("li");
+const todotext2 = document.createTextNode("todo list 2");
+todoitem.append(todotext2);
+todolist.append(todoitem2);
