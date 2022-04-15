@@ -109,3 +109,26 @@ console.log(headline.innerHTML);
 headline.innerHTML = "<h1> inner HTML changed ";
 headline.innerHTML += "<button class=\"btn\"> Learn More </button> ";
 console.log(headline.innerHTML);
+
+
+
+
+
+// DOM tree 
+
+const rootnode = document.getRootNode();
+const htmlelementnode = rootnode.childNodes[0];
+console.log(htmlelementnode);
+const headelementnode = htmlelementnode.childNodes[0];
+console.log(htmlelementnode.childNodes);
+const textnode = htmlelementnode.childNodes[2];
+console.log(htmlelementnode.ChildNodes);
+
+
+
+//task
+
+const h1 = document.querySelector("h1");
+const div = h1.parentNode;
+div.style.backgroundColor = "white";
+div.style.color = "black"; 1
