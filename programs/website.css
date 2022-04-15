@@ -121,3 +121,8 @@ a{
   margin: auto;
   margin-top: 1rem;
 }
+
+.bg-dark{
+  background-color: black;
+  color: white;
+}

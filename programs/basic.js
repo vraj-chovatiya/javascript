@@ -131,4 +131,18 @@ console.log(htmlelementnode.ChildNodes);
 const h1 = document.querySelector("h1");
 const div = h1.parentNode;
 div.style.backgroundColor = "white";
-div.style.color = "black"; 1
+div.style.color = "black";
+
+
+
+// class list, add, remove, toggle class
+
+const classTodo = document.querySelector(".todo-section");
+console.log(classTodo.classList);
+// classTodo.classList.add("bg-dark");
+// classTodo.classList.remove("container");
+const ans = classTodo.classList.contains("container");
+console.log(ans);
+
+classTodo.classList.toggle("bg-dark");
+// toggle method use, class are available so it will remove it or class are not available so it will add class. 
