@@ -56,12 +56,12 @@ console.log(input.getAttribute("type"));
 // get multiple elements using getElements by class name
 // get multiple items using querySelector
 
-const navitems = document.getElementsByClassName("nav-item");  // html collection
-console.log(typeof navitems);
-console.log(Array.isArray(navitems));   // check navitems is a array like object or not! 
+// const navitems = document.getElementsByClassName("nav-item");  // html collection
+// console.log(typeof navitems);
+// console.log(Array.isArray(navitems));   // check navitems is a array like object or not! 
 
-const navitem = document.querySelectorAll(".nav-item");  // nodeList 
-console.log(navitem);  
+// const navitem = document.querySelectorAll(".nav-item");  // nodeList 
+// console.log(navitem);  
 
 
 
@@ -69,9 +69,43 @@ console.log(navitem);
 
 
 // loop 
-const navitems = document.getElementsByClassName("nav-item");  // html collection
-console.log(typeof navitems);
-console.log(Array.isArray(navitems));   // check navitems is a array like object or not! 
+// const navitems = document.getElementsByClassName("nav-item");  // html collection
+// console.log(typeof navitems);
+// console.log(Array.isArray(navitems));   // check navitems is a array like object or not! 
 
-const navitem = document.querySelectorAll(".nav-item");  // nodeList 
-console.log(navitem);  
+// const navitem = document.querySelectorAll(".nav-item");  // nodeList 
+// console.log(navitem);  
+
+
+
+const navitem = document.getElementsByTagName("a");
+console.log(navitem);
+
+
+for(i=0; i<navitem.length; i++){
+  const nav = navitem[i];
+  nav.style.backgroundColor = "red";
+  nav.style.color = "white";
+  nav.style.padding = "10px";
+  nav.style.fontWeight = "bold";
+}
+
+
+
+// for of loop 
+for(const value of navitem){
+  value.style.fontWeight = "normal";
+  value.style.color = "yellow";
+}
+
+
+
+
+// inner html 
+
+const headline = document.querySelector(".headline");
+console.log(headline);
+console.log(headline.innerHTML);
+headline.innerHTML = "<h1> inner HTML changed ";
+headline.innerHTML += "<button class=\"btn\"> Learn More </button> ";
+console.log(headline.innerHTML);
