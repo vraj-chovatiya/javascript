@@ -150,20 +150,123 @@ console.log(htmlelementnode.ChildNodes);
 
 
 
+
 // *************************
 // document.createElement
 // append
 // prepend 
 // remove
 
+
 const todolist = document.querySelector(".todo-list");
 const todoitem = document.createElement("li");
-const todotext = document.createTextNode("new todo list");
-todoitem.append(todotext);
+// const todotext = document.createTextNode("new todo list");
+todoitem.textContent = "new todo item";
+// todoitem.append(todotext);
 todolist.append(todoitem);
 
+
+const todo1 = document.querySelector(".todo-list li");
+todo1.remove();
+
+
+
+
+
+// before and after method
+
+const todolist = document.querySelector(".todo-list");
+const todoitem = document.createElement("li");
+// const todotext = document.createTextNode("after method");
+// todoitem.append(todotext);
+todoitem.textContent = "todo list | after method";
+todolist.before(todoitem);
+todolist.after(todoitem);
+
+
+
+
+
+// Element.insertedjecentHTML(where, html)
+// beforebegin
+// afterbegin
+// beforeend
+// afterend
+
+const todolist = document.querySelector(".todo-list");
+todolist.insertAdjacentHTML("beforeend", "<li> Todo 2 </li>");
+
 const todolist2 = document.querySelector(".todo-list");
-const todoitem2 = document.createElement("li");
-const todotext2 = document.createTextNode("todo list 2");
-todoitem.append(todotext2);
-todolist.append(todoitem2);
+todolist2.insertAdjacentHTML("afterbegin", "<li> Todo 3 </li>");
+
+const todolist3 = document.querySelector(".todo-list");
+todolist3.insertAdjacentHTML("afterbegin", "<li> Todo 4 </li>");
+
+
+
+
+
+// clone nodes
+
+const ul = document.querySelector(".todo-list");
+const li = document.createElement("li");
+li.textContent = "todo 2";
+const clone = li.cloneNode(true);
+ul.append(li);
+ul.prepend(clone);
+
+
+
+
+
+
+// some old methods to support old IE
+// appendchild
+// insertbefore
+// replacechild
+// removechild
+
+
+// ** appendChild ** 
+const ul = document.querySelector(".todo-list");
+const li = document.createElement("li");
+li.textContent = "todo 2";
+ul.appendChild(li);
+
+// ** insertbefore ** 
+const ul = document.querySelector(".todo-list");
+const li = document.createElement("li");
+const referece = document.querySelector(".first-class");
+li.textContent = "todo 2";
+ul.appendChild(li);
+
+// ** replacechild **
+const ul = document.querySelector(".todo-list");
+const li = document.createElement("li");
+const referece = document.querySelector(".first-class");
+li.textContent = "todo 2";
+ul.replaceChild(li, referece);
+
+// ** removeChild **
+const ul = document.querySelector(".todo-list");
+const li = document.createElement("li");
+const referece = document.querySelector(".first-class");
+li.textContent = "todo 2";
+ul.removeChild(referece);
+
+
+
+
+
+
+// static list vs live list
+
+// queryselsctorall hamein static list dengi
+// getlementbyomething hamein live list degi 
+
+const ul = document.querySelector(".todo-list");
+const listitem = ul.getElementsByTagName("li");
+const sixitem = document.createElement("li");
+sixitem.textContent = "item 6";
+ul.append(sixitem);
+console.log(listitem);
