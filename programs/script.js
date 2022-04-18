@@ -23,12 +23,11 @@ todoform.addEventListener("submit",(e)=>{
 todolist.addEventListener("click",(e)=>{
   if(e.target.classList.contains("done")){
     const lispan = e.target.parentNode.previousElementSibling;
-    lispan.style.textDecoration = "line-through";
+    lispan.style.color = "lightblue";
   }
 
   if(e.target.classList.contains("remove")){
     const targetli = e.target.parentNode.parentNode;
     targetli.remove();
   }
-  
-})
+});
