@@ -3,7 +3,7 @@ const body = document.body;
 
 
 function toggletheme(){
-  if(body.classList.containes("dark-mode")){
+  if(body.classList.contains("dark-mode")){
     body.classList.remove("dark-mode");
     togglebtn.textContent = "Dark Mode";
   }
