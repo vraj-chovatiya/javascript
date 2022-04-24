@@ -1,7 +1,7 @@
 // using getElementById selector
 
-// const mainheading = document.getElementById("main-heading");
-// console.log(mainheading);
+const mainheading = document.getElementById("main-heading");
+console.log(mainheading);
 
 
 
@@ -56,12 +56,12 @@ console.log(input.getAttribute("type"));
 // get multiple elements using getElements by class name
 // get multiple items using querySelector
 
-// const navitems = document.getElementsByClassName("nav-item");  // html collection
-// console.log(typeof navitems);
-// console.log(Array.isArray(navitems));   // check navitems is a array like object or not! 
+const navitems = document.getElementsByClassName("nav-item");  // html collection
+console.log(typeof navitems);
+console.log(Array.isArray(navitems));   // check navitems is a array like object or not! 
 
-// const navitem = document.querySelectorAll(".nav-item");  // nodeList 
-// console.log(navitem);  
+const navitem = document.querySelectorAll(".nav-item");  // nodeList 
+console.log(navitem);  
 
 
 
@@ -69,12 +69,12 @@ console.log(input.getAttribute("type"));
 
 
 // loop 
-// const navitems = document.getElementsByClassName("nav-item");  // html collection
-// console.log(typeof navitems);
-// console.log(Array.isArray(navitems));   // check navitems is a array like object or not! 
+const navitems = document.getElementsByClassName("nav-item");  // html collection
+console.log(typeof navitems);
+console.log(Array.isArray(navitems));   // check navitems is a array like object or not! 
 
-// const navitem = document.querySelectorAll(".nav-item");  // nodeList 
-// console.log(navitem);  
+const navitem = document.querySelectorAll(".nav-item");  // nodeList 
+console.log(navitem);  
 
 
 
@@ -128,24 +128,24 @@ console.log(htmlelementnode.ChildNodes);
 
 //task
 
-// const h1 = document.querySelector("h1");
-// const div = h1.parentNode;
-// div.style.backgroundColor = "white";
-// div.style.color = "black";
+const h1 = document.querySelector("h1");
+const div = h1.parentNode;
+div.style.backgroundColor = "white";
+div.style.color = "black";
 
 
 
 // class list, add, remove, toggle class
 
-// const classTodo = document.querySelector(".todo-section");
-// console.log(classTodo.classList);
-// // classTodo.classList.add("bg-dark");
-// // classTodo.classList.remove("container");
-// const ans = classTodo.classList.contains("container");
-// console.log(ans);
+const classTodo = document.querySelector(".todo-section");
+console.log(classTodo.classList);
+classTodo.classList.add("bg-dark");
+classTodo.classList.remove("container");
+const ans = classTodo.classList.contains("container");
+console.log(ans);
 
-// classTodo.classList.toggle("bg-dark");
-// // toggle method use, class are available so it will remove it or class are not available so it will add class. 
+classTodo.classList.toggle("bg-dark");
+// toggle method use, class are available so it will remove it or class are not available so it will add class. 
 
 
 
@@ -158,16 +158,16 @@ console.log(htmlelementnode.ChildNodes);
 // remove
 
 
-// const todolist = document.querySelector(".todo-list");
-// const todoitem = document.createElement("li");
-// // const todotext = document.createTextNode("new todo list");
-// todoitem.textContent = "new todo item";
-// // todoitem.append(todotext);
-// todolist.append(todoitem);
+const todolist = document.querySelector(".todo-list");
+const todoitem = document.createElement("li");
+const todotext = document.createTextNode("new todo list");
+todoitem.textContent = "new todo item";
+todoitem.append(todotext);
+todolist.append(todoitem);
 
 
-// const todo1 = document.querySelector(".todo-list li");
-// todo1.remove();
+const todo1 = document.querySelector(".todo-list li");
+todo1.remove();
 
 
 
@@ -175,13 +175,13 @@ console.log(htmlelementnode.ChildNodes);
 
 // before and after method
 
-// const todolist = document.querySelector(".todo-list");
-// const todoitem = document.createElement("li");
-// // const todotext = document.createTextNode("after method");
-// // todoitem.append(todotext);
-// todoitem.textContent = "todo list | after method";
-// todolist.before(todoitem);
-// todolist.after(todoitem);
+const todolist = document.querySelector(".todo-list");
+const todoitem = document.createElement("li");
+const todotext = document.createTextNode("after method");
+todoitem.append(todotext);
+todoitem.textContent = "todo list | after method";
+todolist.before(todoitem);
+todolist.after(todoitem);
 
 
 
@@ -193,14 +193,14 @@ console.log(htmlelementnode.ChildNodes);
 // beforeend
 // afterend
 
-// const todolist = document.querySelector(".todo-list");
-// todolist.insertAdjacentHTML("beforeend", "<li> Todo 2 </li>");
+const todolist = document.querySelector(".todo-list");
+todolist.insertAdjacentHTML("beforeend", "<li> Todo 2 </li>");
 
-// const todolist2 = document.querySelector(".todo-list");
-// todolist2.insertAdjacentHTML("afterbegin", "<li> Todo 3 </li>");
+const todolist2 = document.querySelector(".todo-list");
+todolist2.insertAdjacentHTML("afterbegin", "<li> Todo 3 </li>");
 
-// const todolist3 = document.querySelector(".todo-list");
-// todolist3.insertAdjacentHTML("afterbegin", "<li> Todo 4 </li>");
+const todolist3 = document.querySelector(".todo-list");
+todolist3.insertAdjacentHTML("afterbegin", "<li> Todo 4 </li>");
 
 
 
@@ -208,12 +208,12 @@ console.log(htmlelementnode.ChildNodes);
 
 // clone nodes
 
-// const ul = document.querySelector(".todo-list");
-// const li = document.createElement("li");
-// li.textContent = "todo 2";
-// const clone = li.cloneNode(true);
-// ul.append(li);
-// ul.prepend(clone);
+const ul = document.querySelector(".todo-list");
+const li = document.createElement("li");
+li.textContent = "todo 2";
+const clone = li.cloneNode(true);
+ul.append(li);
+ul.prepend(clone);
 
 
 
@@ -228,31 +228,31 @@ console.log(htmlelementnode.ChildNodes);
 
 
 // // ** appendChild ** 
-// const ul = document.querySelector(".todo-list");
-// const li = document.createElement("li");
-// li.textContent = "todo 2";
-// ul.appendChild(li);
+const ul = document.querySelector(".todo-list");
+const li = document.createElement("li");
+li.textContent = "todo 2";
+ul.appendChild(li);
 
 // // ** insertbefore ** 
-// const ul = document.querySelector(".todo-list");
-// const li = document.createElement("li");
-// const referece = document.querySelector(".first-class");
-// li.textContent = "todo 2";
-// ul.appendChild(li);
+const ul = document.querySelector(".todo-list");
+const li = document.createElement("li");
+const referece = document.querySelector(".first-class");
+li.textContent = "todo 2";
+ul.appendChild(li);
 
 // // ** replacechild **
-// const ul = document.querySelector(".todo-list");
-// const li = document.createElement("li");
-// const referece = document.querySelector(".first-class");
-// li.textContent = "todo 2";
-// ul.replaceChild(li, referece);
+const ul = document.querySelector(".todo-list");
+const li = document.createElement("li");
+const referece = document.querySelector(".first-class");
+li.textContent = "todo 2";
+ul.replaceChild(li, referece);
 
 // // ** removeChild **
-// const ul = document.querySelector(".todo-list");
-// const li = document.createElement("li");
-// const referece = document.querySelector(".first-class");
-// li.textContent = "todo 2";
-// ul.removeChild(referece);
+const ul = document.querySelector(".todo-list");
+const li = document.createElement("li");
+const referece = document.querySelector(".first-class");
+li.textContent = "todo 2";
+ul.removeChild(referece);
 
 
 
@@ -264,12 +264,12 @@ console.log(htmlelementnode.ChildNodes);
 // // queryselsctorall hamein static list dengi
 // // getlementbyomething hamein live list degi 
 
-// const ul = document.querySelector(".todo-list");
-// const listitem = ul.getElementsByTagName("li");
-// const sixitem = document.createElement("li");
-// sixitem.textContent = "item 6";
-// ul.append(sixitem);
-// console.log(listitem);
+const ul = document.querySelector(".todo-list");
+const listitem = ul.getElementsByTagName("li");
+const sixitem = document.createElement("li");
+sixitem.textContent = "item 6";
+ul.append(sixitem);
+console.log(listitem);
 
 
 
